@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba342a1-abbb-4506-a12c-99e235b4e6ab" name="Changes" comment="" />
+    <list default="true" id="fba342a1-abbb-4506-a12c-99e235b4e6ab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/FileShareBackendApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/controller/AttachmentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/dto/FileDetailsDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/dto/PasswordDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/dto/ResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/exception/FileExpiredException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/exception/FileNotDeletedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/exception/FileNotSavedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/exception/InvalidFileNameException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/exception/WrongPasswordException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/exceptionHandler/AppExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/model/Attachment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/repository/AttachmentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/service/AttachmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/service/AttachmentServiceImpl.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +67,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   },
@@ -96,7 +116,7 @@
       <workItem from="1704654144512" duration="1110000" />
       <workItem from="1704655287946" duration="263000" />
       <workItem from="1704655584702" duration="51796000" />
-      <workItem from="1705237833319" duration="391000" />
+      <workItem from="1705237833319" duration="627000" />
     </task>
     <servers />
   </component>
