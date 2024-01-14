@@ -36,7 +36,7 @@ public class AttachmentServiceImpl implements  AttachmentService {
 
     @Value("${frontend.url}")
     private String frontEndURL;
-    public static final String DIRECTORY = System.getProperty("user.home") + "/Downloads";
+    public static final String DIRECTORY = System.getProperty("user.home");
 
     @Override
     public Attachment uploadAttachment(MultipartFile file, String password, int expirationDays) {
