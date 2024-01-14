@@ -35,6 +35,12 @@ public class AppExceptionHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT).body("{\"message\": \"" + ex.getMessage() + "\"}");
     }
 
+    @ResponseStatus(HttpStatus.PAYLOAD_TOO_LARGE)
+    @ExceptionHandler(InvalidFileSizeException.class)
+    public ResponseEntity<String> handleInvalidFileSizeException(InvalidFileSizeException ex) {
+        return ResponseEntity.status(HttpStatus.PAYLOAD_TOO_LARGE).body("{\"message\": \"" + ex.getMessage() + "\"}");
+    }
+
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(FileNotSavedException.class)
     public ResponseEntity<String> handleFileNotSavedException(FileNotSavedException ex) {

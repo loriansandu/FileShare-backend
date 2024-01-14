@@ -36,10 +36,15 @@ public class AttachmentServiceImpl implements  AttachmentService {
 
     @Value("${frontend.url}")
     private String frontEndURL;
+
+    @Value("${file.max-size}")
+    private long FILE_MAXSIZE;
     public static final String DIRECTORY = System.getProperty("user.home");
 
     @Override
     public Attachment uploadAttachment(MultipartFile file, String password, int expirationDays) {
+        if (file.getSize() > (FILE_MAXSIZE * 1024 * 1024))
+            throw new InvalidFileSizeException("File size exceeds limit ");
         String fileName = StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename()));
         try {
             if (fileName.contains("..")) {
@@ -121,11 +126,8 @@ public class AttachmentServiceImpl implements  AttachmentService {
 //    @Scheduled(cron = "0 * * * * ?") // Run every minute
     public void processExpiredAttachments() {
         LocalDateTime currentDate = LocalDateTime.now();
-
-        // Retrieve attachments with expiration dates before the current date
         List<Attachment> expiredAttachments = attachmentRepository.findAttachmentsByExpirationDateBeforeAndExpired(currentDate, false).get();
 
-        // Process the expired attachments (e.g., delete them)
         for (Attachment attachment : expiredAttachments) {
             attachment.setExpired(true);
             attachment.setUrl(null);
