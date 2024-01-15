@@ -13,19 +13,19 @@ import java.util.List;
 
 @Configuration
 public class AppConfig {
-    @Bean
-    public CorsFilter corsFilter( @Value("${security.allowed.origins}") final List<String> origins,
-                                  @Value("${security.allowed.headers}") final List<String> headers,
-                                  @Value("${security.allowed.methods}") final List<String> methods,
-                                  @Value("${security.exposed.headers}") final List<String> exposedHeaders) {
-        UrlBasedCorsConfigurationSource urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
-        CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.setAllowCredentials(true);
-        corsConfiguration.setAllowedOrigins(origins);
-        corsConfiguration.setAllowedHeaders(headers);
-        corsConfiguration.setExposedHeaders(exposedHeaders);
-        corsConfiguration.setAllowedMethods(methods);
-        urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
-        return new CorsFilter(urlBasedCorsConfigurationSource);
-    }
+//    @Bean
+//    public CorsFilter corsFilter( @Value("${security.allowed.origins}") final List<String> origins,
+//                                  @Value("${security.allowed.headers}") final List<String> headers,
+//                                  @Value("${security.allowed.methods}") final List<String> methods,
+//                                  @Value("${security.exposed.headers}") final List<String> exposedHeaders) {
+//        UrlBasedCorsConfigurationSource urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
+//        CorsConfiguration corsConfiguration = new CorsConfiguration();
+//        corsConfiguration.setAllowCredentials(true);
+//        corsConfiguration.setAllowedOrigins(origins);
+//        corsConfiguration.setAllowedHeaders(headers);
+//        corsConfiguration.setExposedHeaders(exposedHeaders);
+//        corsConfiguration.setAllowedMethods(methods);
+//        urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
+//        return new CorsFilter(urlBasedCorsConfigurationSource);
+//    }
 }
