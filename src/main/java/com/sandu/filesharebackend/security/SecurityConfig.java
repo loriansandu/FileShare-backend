@@ -23,10 +23,13 @@ public class SecurityConfig {
             @Value("${security.exposed.headers}") final List<String> exposedHeaders) throws Exception {
 
         httpSecurity.csrf().disable();
+        httpSecurity.headers()
+                .frameOptions()
+                        .sameOrigin();
 
 //        httpSecurity.authorizeHttpRequests().anyRequest().authenticated();
 
-
+        httpSecurity.authorizeHttpRequests().anyRequest().permitAll();
         httpSecurity.cors(cors -> {
             CorsConfigurationSource corsConfigurationSource = r -> {
                 CorsConfiguration corsConfiguration = new CorsConfiguration();

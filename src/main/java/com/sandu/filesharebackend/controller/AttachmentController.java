@@ -56,7 +56,6 @@ public class AttachmentController {
 
     @PostMapping("/{fileId}")
     public FileDetailsDto getFileDetails(@PathVariable String fileId, @RequestBody PasswordDto passwordDto) throws Exception {
-        System.out.println(passwordDto);
         Attachment attachment = attachmentService.getFileDetails(fileId, passwordDto.getPassword());
         return new FileDetailsDto(attachment.getId(),
                 attachment.getFileName(),

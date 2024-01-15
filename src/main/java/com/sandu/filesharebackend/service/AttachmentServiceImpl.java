@@ -118,7 +118,6 @@ public class AttachmentServiceImpl implements  AttachmentService {
     @Override
     public boolean checkFileLocked(String id) throws FileNotFoundException {
         Attachment attachment = attachmentRepository.findById(id).orElseThrow(() -> new FileNotFoundException("File not found with id: " + id));
-        System.out.println(attachment.getPassword());
         return !attachment.getPassword().isEmpty();
     }
 

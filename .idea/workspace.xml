@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba342a1-abbb-4506-a12c-99e235b4e6ab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandu/filesharebackend/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandu/filesharebackend/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandu/filesharebackend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandu/filesharebackend/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandu/filesharebackend/security/SecurityConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +86,8 @@
       <envs>
         <env name="ALLOWED_ORIGINS" value="http://localhost:4200" />
         <env name="FRONTEND_URL" value="http://localhost:4200" />
+        <env name="H2DATABASE_PASSWORD" value="2001" />
+        <env name="H2DATABASE_USERNAME" value="lorianFileShare" />
       </envs>
       <module name="FileShare-backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sandu.filesharebackend.FileShareBackendApplication" />
@@ -112,7 +116,7 @@
       <workItem from="1704655287946" duration="263000" />
       <workItem from="1704655584702" duration="51796000" />
       <workItem from="1705237833319" duration="627000" />
-      <workItem from="1705238655155" duration="14010000" />
+      <workItem from="1705238655155" duration="16403000" />
     </task>
     <servers />
   </component>
