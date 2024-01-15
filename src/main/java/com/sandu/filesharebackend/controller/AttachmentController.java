@@ -20,7 +20,6 @@ import static org.springframework.http.HttpHeaders.CONTENT_DISPOSITION;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/file")
-@CrossOrigin(origins = "*")
 public class AttachmentController {
     private final AttachmentService attachmentService;
 
